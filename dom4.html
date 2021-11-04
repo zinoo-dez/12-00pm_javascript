@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      .app_h1 {
+        width: 300px;
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      //   const body = document.querySelector("body");
+      const h1 = document.createElement("h1");
+      const p = document.createElement("p");
+      h1.innerText = "<b>Hello</b>";
+      p.innerHTML = "<b>Hello</b>";
+      h1.classList = "app1 app2 app3";
+      h1.classList.add("app1 app2 app3");
+      h1.classList.remove("app1 app2 app3");
+      h1.className = "app_h1";
+      h1.id = "h1";
+      document.body.appendChild(h1);
+      document.body.appendChild(p);
+    </script>
+  </body>
+</html>
